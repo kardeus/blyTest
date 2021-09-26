@@ -1,1 +1,17 @@
 # blyTest
+- Architecture : MVVM - clean 아키텍쳐
+- Langueage : Kotlin 1.5.20 / java 1.8
+- build
+    - compile SDK 30
+    - Android gradle 4.2.2, gradle 7.2 이상 환경
+    - base.gradle 환경 세팅
+- Target
+    - Min 21
+    - Max : 30
+- Databinding : O
+- Network : Retrofit
+- Image : Coil (GIF 로더기능)
+- AAC
+    - BottomNavigationView
+    - Room
+    - ViewModel
