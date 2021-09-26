@@ -1,4 +1,4 @@
-# blyTest
+# shopList
 - Architecture : MVVM - clean 아키텍쳐
 - Langueage : Kotlin 1.5.20 / java 1.8
 - build
