@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                       
+                                                    
+
+    
+                                                                            
+                 
+                            
+                                                                       
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeFragment" android:tag="layout/fragment_favorite_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical"
+            android:tag="binding_1"                                                                  
+                                                                                       
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:itemCount="20"
+            tools:spanCount="2"
+            tools:listitem="@layout/list_item_product"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

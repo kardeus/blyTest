@@ -1,0 +1,50 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="twin.jin.presentation" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.INTERNET" />
+9-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:5:5-66
+9-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:5:22-64
+10
+11    <application
+11-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:7:5-23:19
+12        android:allowBackup="true"
+12-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:8:9-35
+13        android:icon="@mipmap/ic_launcher"
+13-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:9:9-43
+14        android:label="@string/app_name"
+14-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:10:9-41
+15        android:roundIcon="@mipmap/ic_launcher_round"
+15-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:11:9-54
+16        android:supportsRtl="true"
+16-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:12:9-35
+17        android:theme="@style/Theme.AblyTest"
+17-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:14:9-46
+18        android:usesCleartextTraffic="true" >
+18-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:13:9-44
+19        <activity
+19-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:15:9-22:20
+20            android:name="twin.jin.presentation.ui.main.MainActivity"
+20-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:16:13-49
+21            android:label="@string/app_name" >
+21-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:17:13-45
+22            <intent-filter>
+22-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:18:13-21:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:19:17-69
+23-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:19:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:20:17-77
+25-->/Users/jin/Project/AblyTest/presentation/src/main/AndroidManifest.xml:20:27-74
+26            </intent-filter>
+27        </activity>
+28    </application>
+29
+30</manifest>

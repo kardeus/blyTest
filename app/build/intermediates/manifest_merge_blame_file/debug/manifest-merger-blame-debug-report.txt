@@ -1,0 +1,116 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="twin.jin.ably"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/jin/Project/AblyTest/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/jin/Project/AblyTest/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
+11-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-64
+12    <uses-permission android:name="android.permission.REORDER_TASKS" />
+12-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:24:5-72
+12-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:24:22-69
+13
+14    <application
+14-->/Users/jin/Project/AblyTest/app/src/main/AndroidManifest.xml:5:5-52
+15        android:name="twin.jin.ably.AblyApplication"
+15-->/Users/jin/Project/AblyTest/app/src/main/AndroidManifest.xml:5:18-49
+16        android:allowBackup="true"
+16-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.6.0] /Users/jin/.gradle/caches/transforms-3/e6ec0635d91f5ead09f9c753914e0e4c/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-43
+20        android:label="@string/app_name"
+20-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-54
+22        android:supportsRtl="true"
+22-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.AblyTest"
+24-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-46
+25        android:usesCleartextTraffic="true" >
+25-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-44
+26        <activity
+26-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-27:20
+27            android:name="twin.jin.presentation.ui.main.MainActivity"
+27-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-70
+28            android:label="@string/app_name" >
+28-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-45
+29            <intent-filter>
+29-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-26:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-69
+30-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-77
+32-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:27-74
+33            </intent-filter>
+34        </activity>
+35
+36        <service
+36-->[androidx.room:room-runtime:2.3.0] /Users/jin/.gradle/caches/transforms-3/2693699690bc10340f55462102577fd2/transformed/room-runtime-2.3.0/AndroidManifest.xml:25:9-28:40
+37            android:name="androidx.room.MultiInstanceInvalidationService"
+37-->[androidx.room:room-runtime:2.3.0] /Users/jin/.gradle/caches/transforms-3/2693699690bc10340f55462102577fd2/transformed/room-runtime-2.3.0/AndroidManifest.xml:26:13-74
+38            android:directBootAware="true"
+38-->[androidx.room:room-runtime:2.3.0] /Users/jin/.gradle/caches/transforms-3/2693699690bc10340f55462102577fd2/transformed/room-runtime-2.3.0/AndroidManifest.xml:27:13-43
+39            android:exported="false" />
+39-->[androidx.room:room-runtime:2.3.0] /Users/jin/.gradle/caches/transforms-3/2693699690bc10340f55462102577fd2/transformed/room-runtime-2.3.0/AndroidManifest.xml:28:13-37
+40
+41        <activity
+41-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:27:9-34:20
+42            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+42-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:28:13-99
+43            android:exported="true"
+43-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:29:13-36
+44            android:theme="@android:style/Theme" >
+44-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:30:13-49
+45            <intent-filter>
+45-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:31:13-33:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-69
+46-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:25-66
+47            </intent-filter>
+48        </activity>
+49        <activity
+49-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:35:9-42:20
+50            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+50-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:36:13-95
+51            android:exported="true"
+51-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:37:13-36
+52            android:theme="@android:style/Theme" >
+52-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:38:13-49
+53            <intent-filter>
+53-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:31:13-33:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-69
+54-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:25-66
+55            </intent-filter>
+56        </activity>
+57        <activity
+57-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:43:9-50:20
+58            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+58-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:44:13-103
+59            android:exported="true"
+59-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:45:13-36
+60            android:theme="@android:style/Theme.Dialog" >
+60-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:46:13-56
+61            <intent-filter>
+61-->[androidx.test:core:1.4.0] /Users/jin/.gradle/caches/transforms-3/800f93e61d40f4eb5a053044717067cb/transformed/core-1.4.0/AndroidManifest.xml:31:13-33:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-69
+62-->[:presentation] /Users/jin/Project/AblyTest/presentation/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:25-66
+63            </intent-filter>
+64        </activity>
+65    </application>
+66
+67</manifest>

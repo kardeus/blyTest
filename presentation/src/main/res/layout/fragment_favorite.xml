@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+        <import type="twin.jin.common.widget.recycler.RecyclerViewFactory"/>
+        <variable
+            name="viewModel"
+            type="twin.jin.presentation.ui.main.MainSharedViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical"
+            addItemDecoration="@{RecyclerViewFactory.getGridItemDecoration(@dimen/grid_item_margin)}"
+            app:layoutManager="@{RecyclerViewFactory.getGridLayoutManager(context, 2)}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:itemCount="20"
+            tools:spanCount="2"
+            tools:listitem="@layout/list_item_product"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

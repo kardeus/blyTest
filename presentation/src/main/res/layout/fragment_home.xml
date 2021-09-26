@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="twin.jin.common.widget.recycler.RecyclerViewFactory"/>
+
+        <variable
+            name="viewModel"
+            type="twin.jin.presentation.ui.home.HomeViewModel" />
+    </data>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".ui.home.HomeFragment">
+
+                    <twin.jin.presentation.ui.banner.BannerView
+                        android:id="@+id/banner_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        setBanner="@{viewModel.banners}"
+                        app:layout_constraintDimensionRatio="h, 3:1.6"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/rv_product"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="16dp"
+                        android:orientation="vertical"
+                        android:nestedScrollingEnabled="false"
+                        app:layout_constraintTop_toBottomOf="@+id/banner_view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        addItemDecoration="@{RecyclerViewFactory.getGridItemDecoration(@dimen/grid_item_margin)}"
+                        app:layoutManager="@{RecyclerViewFactory.getGridLayoutManager(context, 2)}"
+                        tools:itemCount="20"
+                        tools:spanCount="2"
+                        tools:listitem="@layout/list_item_product"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

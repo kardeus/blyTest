@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AblyTest.iml" filepath="$PROJECT_DIR$/.idea/modules/AblyTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AblyTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AblyTest.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/AblyTest.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/AblyTest.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/AblyTest.data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/AblyTest.data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/AblyTest.domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/AblyTest.domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation/AblyTest.presentation.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation/AblyTest.presentation.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="product"
+            type="twin.jin.domain.data.ProductUiData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            setViewRoundRadius="@{@dimen/image_radius}"
+            imagePath="@{product.image}"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/price"
+            app:layout_constraintDimensionRatio="w, 6:5"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/like"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            isSelected="@{product.isFavorite}"
+            app:srcCompat="@drawable/selector_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/discount_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="4dp"
+            android:text="@{@string/discount_format(product.pricePercent)}"
+            android:visibility="@{product.pricePercent > 0}"
+            app:layout_constraintTop_toBottomOf="@+id/image"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="10%"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="4dp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:ellipsize="end"
+            android:text="@{@string/price_format(product.price)}"
+            android:visibility="@{product.price > 0}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/discount_rate"
+            app:layout_constraintTop_toBottomOf="@+id/image"
+            tools:text="8,200" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:ellipsize="end"
+            android:text="@{product.name}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/sell_count"
+            tools:text="[선물포장/별자리각인] 집들이 선물 원목 별자리 인센스 스틱 홀더 3type 호두나무 참나무 단풍나무 인테리어소품 감성소품 캠핑용품"/>
+
+        <TextView
+            android:id="@+id/new_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:background="@drawable/shp_rounded_rect"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:visibility="@{product.is_new, default = gone}"
+            android:text="NEW"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sell_count"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_height="26dp"
+            android:ellipsize="end"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textSize="12dp"
+            android:textColor="@color/gray"
+            android:text="@{@string/sell_count_format(product.sell_count)}"
+            android:visibility="@{product.sell_count > 0}"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/new_badge"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintBottom_toBottomOf="@id/new_badge"
+            tools:text="1,023개 구매중"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
